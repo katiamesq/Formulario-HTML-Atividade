@@ -2,7 +2,7 @@ Desafio: Clone
 
 Dentro da tag form:
 
-1 fieldset + legend
+2 fieldset + legend
 Vários inputs de texto
 vários inputs de radio
 vários inputs de checkbox
