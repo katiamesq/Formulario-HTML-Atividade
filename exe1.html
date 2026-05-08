@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade de Formulário</title>
+</head>
+<body style="background-color:burlywood;">
+    <header>
+        <h1>Formulário de cadastro</h1>
+    </header>
+    <form action="/enviar" method="get">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" maxlength="30" required>
+ <br>      
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+<br>
+        <label for="senha">Senha:</label>
+        <input type="password" id="senha" name="senha" minlength="8" required>
+
+        <label for="senha">Confirmação da senha:</label>
+        <input type="password" id="senha" name="senha" minlength="8" required>
+<br>
+        <label for="tipo">Tipo sanguíneo:</label><br>
+        <input type="radio" id="tipo" name="group1" value="A">A<br>
+        <input type="radio" id="tipo" name="group1" value="B">B<br>
+        <input type="radio" id="tipo" name="group1" value="AB">AB<br>
+        <input type="radio" id="tipo" name="group1" value="O">O<br>
+<br>
+        <input type="checkbox" id="termo" name="termos" required>
+        <label for="termo">Eu aceito os termos de uso</label>
+<br>
+        <input type="checkbox" id="noticias" name="noticias" checked>
+        <label for="noticias">Quero receber notícias por email</label>
+<br>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
+
+    </form>
+    
+</body>
+</html>

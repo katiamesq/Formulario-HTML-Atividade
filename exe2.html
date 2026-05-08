@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade de formulário II</title>
+</head>
+<body style="background-color:darksalmon;">
+    <header>
+        <h1>Formulário de Opinião</h1>
+    </header>
+<form action="/enviar" method="get">
+    <label for="mensagem">Conte-nos como foi sua experiência:</label><br>
+    <textarea id="mensagem" name="mensagem" rows="10" cols="50" placeholder="Digite sua mensagem"></textarea><br>
+    <label for="nome">Nome:</label>
+    <input type="text" id="nome" name="nome"><br><br>
+    <label for="avaliacao">Avalie nosso conteúdo:</label>
+    <select name="estrelas" id="avaliacao">
+        <option value="nenhum" selected disable>Quantas ⭐ merecemos?</option>
+        <option value="estrela5">⭐⭐⭐⭐⭐</option>
+        <option value="estrela4">⭐⭐⭐⭐</option>
+        <option value="estrela3">⭐⭐⭐</option>
+        <option value="estrela2">⭐⭐</option>
+        <option value="estrela1">⭐</option>
+    </select>
+<br><br>
+<button type="submit">Enviar</button>
+
+</form>
+</body>
+</html>

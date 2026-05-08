@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade Bônus</title>
+</head>
+<body>
+    <header>
+        <h1>Formulário</h1>
+    </header>
+    
+</body>
+
+<form action="/enviar" method="get">
+
+ <fieldset>
+    <legend>Dados pessoais</legend>
+    <label for="nome">Nome:</label>
+    <input type="text" id="nome" name="nome"><br>
+    <label for="endereco">Endereço:</label>
+    <input type="text" id="endereco" name="endereco"><br>
+    <label for="cidade">Cidade:</label>
+    <input type="text" id="cidade" name="cidade"><br>
+    <label for="estado">Estado:</label>
+    <select name="opcao" id="estado">
+        <option value="nenhum" selected disable>Selecione seu Estado</option>
+        <option value="SP">São Paulo</option>
+        <option value="RJ">Rio de Janeiro</option>
+        <option value="PB">Paraíba</option>
+        <option value="PE">Pernambuco</option>
+        <option value="CE">Ceará</option>
+    </select>
+    </fieldset>
+
+<fieldset>
+    <legend>Dados profissionais</legend>
+
+    <label for="tipo">Natureza do cargo</label><br>
+        <input type="radio" id="tipo" name="group1" value="gerencia">Gerência
+        <input type="radio" id="tipo" name="group1" value="financeiro">Financeiro
+        <input type="radio" id="tipo" name="group1" value="recepcao">Recepção
+        <input type="radio" id="tipo" name="group1" value="administrativo">Administrativo
+        <input type="radio" id="tipo" name="group1" value="juridico">Jurídico <br><br>
+
+    <label for="tipo">Área de interesse</label><br>
+        <input type="checkbox" id="tipo" name="group1" value="computacao">Computação
+        <input type="checkbox" id="tipo" name="group1" value="biologia">Biologia
+        <input type="checkbox" id="tipo" name="group1" value="meio ambiente">Meio ambiente
+        <input type="checkbox" id="tipo" name="group1" value="engenharia">Engenharia
+        <input type="checkbox" id="tipo" name="group1" value="história">História<br><br>
+
+    <label for="curriculo">Mini-curriculo:</label>
+        <textarea id="curriculo" name="curriculo" rows="10" cols="50" placeholder="Escreva aqui..."></textarea><br>
+</fieldset><br>
+    <input type="submit" value="Enviar">
+    <input type="reset" value="Limpar">
+</form>
+
+</html>
